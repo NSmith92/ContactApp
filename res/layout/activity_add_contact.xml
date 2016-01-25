@@ -1,0 +1,211 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.contactapplication.InputScreen$PlaceholderFragment" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/name_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView1"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/surname_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name_input"
+        android:layout_below="@+id/name_input"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/number_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/surname_input"
+        android:layout_below="@+id/surname_input"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/DOB_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/AddressLine_input"
+        android:layout_below="@+id/number_input"
+        android:ems="10"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/email_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/AddressLine_input"
+        android:layout_alignRight="@+id/DOB_input"
+        android:layout_below="@+id/DOB_input"
+        android:ems="10"
+        android:inputType="textEmailAddress" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/AddressLine_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email_input"
+        android:layout_toRightOf="@+id/address_Label"
+        android:ems="10"
+        android:inputType="textPostalAddress" />
+
+    <EditText
+        android:id="@+id/town_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/AddressLine_input"
+        android:layout_alignRight="@+id/AddressLine_input"
+        android:layout_below="@+id/AddressLine_input"
+        android:ems="10"
+        android:inputType="textPostalAddress" />
+
+    <EditText
+        android:id="@+id/county_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/town_input"
+        android:layout_alignRight="@+id/town_input"
+        android:layout_below="@+id/town_input"
+        android:ems="10"
+        android:inputType="textPostalAddress" />
+
+    <EditText
+        android:id="@+id/postcode_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/county_input"
+        android:layout_alignRight="@+id/county_input"
+        android:layout_below="@+id/county_input"
+        android:ems="10"
+        android:inputType="textPostalAddress" />
+
+    <EditText
+        android:id="@+id/group_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/postcode_input"
+        android:layout_below="@+id/postcode_input"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/Name_Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/name_input"
+        android:layout_alignBottom="@+id/name_input"
+        android:layout_alignLeft="@+id/textView1"
+        android:text="First Name:"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/surname_Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/surname_input"
+        android:layout_alignBottom="@+id/surname_input"
+        android:layout_alignLeft="@+id/textView1"
+        android:text="Surname:"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/number_Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/number_input"
+        android:layout_alignBottom="@+id/number_input"
+        android:layout_alignLeft="@+id/surname_Label"
+        android:text="Number:"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/DOB_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/DOB_input"
+        android:layout_alignBottom="@+id/DOB_input"
+        android:layout_alignLeft="@+id/number_Label"
+        android:text="Date of Birth:"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/email_Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/email_input"
+        android:layout_alignBottom="@+id/email_input"
+        android:layout_alignLeft="@+id/DOB_label"
+        android:text="E-mail:"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/address_Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/DOB_label"
+        android:layout_below="@+id/email_input"
+        android:text="Address Line 1:"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/town_Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/town_input"
+        android:layout_alignBottom="@+id/town_input"
+        android:layout_alignLeft="@+id/address_Label"
+        android:text="Town:"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/county_Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/county_input"
+        android:layout_alignBottom="@+id/county_input"
+        android:layout_alignLeft="@+id/town_Label"
+        android:text="County:"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/postcode_Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/postcode_input"
+        android:layout_alignBottom="@+id/postcode_input"
+        android:layout_alignLeft="@+id/county_Label"
+        android:text="PostCode:"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/group_Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/group_input"
+        android:layout_alignBottom="@+id/group_input"
+        android:layout_alignLeft="@+id/postcode_Label"
+        android:text="Group:"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

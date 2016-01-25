@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.contactapplication.MainActivity" >
+
+    <item
+        android:id="@+id/activity_add_contact"
+        android:showAsAction="always"
+        android:title="@string/add_contact"/>
+
+</menu>
